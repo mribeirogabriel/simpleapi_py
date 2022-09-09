@@ -1,7 +1,7 @@
 import uvicorn
 
 from fastapi import FastAPI
-from routers import root, health
+from src.routers import root, health
 
 app = FastAPI()
 app.include_router(root.router)
